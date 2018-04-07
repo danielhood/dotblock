@@ -1,0 +1,17 @@
+{
+  "result": {
+    "item": "minecraft:diamond"
+  },
+  "pattern": [
+    "  D",
+    "DDD",
+    "D  "
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:dirt",
+      "data": 0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "modListVersion": "2",
+  "modList":
+  [
+    {
+      "modid": "dotblock",
+      "name": "DotBlock",
+      "description": "A block with a dot on it",
+      "version": "${version}",
+      "mcversion": "${mcversion}",
+      "url": "",
+      "updateUrl": "",
+      "authorList": [
+        "conflictedoperator"
+      ],
+      "credits": "",
+      "logoFile": "",
+      "screenshots": [
+      ],
+      "parent": ""
+    }
+  ]
+}
