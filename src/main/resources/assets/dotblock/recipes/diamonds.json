@@ -1,11 +1,11 @@
 {
   "result": {
-    "item": "dotblock:dotblock"
+    "item": "minecraft:diamond"
   },
   "pattern": [
+    "  D",
     "DDD",
-    "DDD",
-    "DD "
+    "D  "
   ],
   "type": "forge:ore_shaped",
   "key": {
