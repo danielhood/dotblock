@@ -1,4 +1,4 @@
-package dotblock;
+package dotblock.registration;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;

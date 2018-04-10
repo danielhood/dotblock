@@ -1,4 +1,4 @@
-package dotblock;
+package dotblock.registration;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
@@ -13,7 +13,7 @@ import net.minecraftforge.fml.relauncher.ReflectionHelper;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.registries.IRegistryDelegate;
 import dotblock.DotBlock;
-import dotblock.Blocks;
+import dotblock.registration.Blocks;
 import java.util.Map;
 
 @Mod.EventBusSubscriber(value = Side.CLIENT, modid = DotBlock.MOD_ID)
@@ -26,18 +26,21 @@ public final class Models {
 	public static void registerModels(ModelRegistryEvent evt) {
     DotBlock.LOGGER.info("registerModels: registering models");
 
-    Block block = Blocks.dotblock;
+    registerModel(Blocks.dotblock);
+
+    DotBlock.LOGGER.info("registerModels: complete");
+  }
+
+  private static void registerModel(Block block) {
     IBlockState state = block.getDefaultState();
 
     ModelLoader.setCustomModelResourceLocation(
-				Item.getItemFromBlock(block),
-				0,
+        Item.getItemFromBlock(block),
+        0,
         customStateMappers
-				.getOrDefault(state.getBlock().delegate, fallbackMapper)
-				.putStateModelLocations(state.getBlock())
-				.get(state)
-				);
-
-      DotBlock.LOGGER.info("registerModels: complete");
+        .getOrDefault(state.getBlock().delegate, fallbackMapper)
+        .putStateModelLocations(state.getBlock())
+        .get(state)
+        );
   }
 }

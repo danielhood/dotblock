@@ -1,4 +1,4 @@
-package dotblock;
+package dotblock.registration;
 
 import net.minecraft.item.Item;
 import net.minecraftforge.event.RegistryEvent;
@@ -6,7 +6,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.registries.IForgeRegistry;
 import dotblock.DotBlock;
-import dotblock.item.ItemDotBlock;
+//import dotblock.item.ItemDotBlock;
 
 @Mod.EventBusSubscriber(modid = DotBlock.MOD_ID)
 public final class Items {
